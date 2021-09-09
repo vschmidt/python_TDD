@@ -21,7 +21,7 @@ https://trendoceans.com/how-to-install-and-setup-selenium-with-firefox-on-ubuntu
 
 #### Make drivers dir
 `
-$ mkdir -p /drivers
+$ sudo mkdir -p /usr/bin/geckodriver/
 `
 
 #### Download last drivers
@@ -35,5 +35,10 @@ $ wget https://github.com/mozilla/geckodriver/releases/download/vX.XX.X/geckodri
 
 #### Extract files to drivers folder
 `
-$ tar xvf ~/Downloads/geckodriver-vX.XX.X-linux64.tar.gz -C drivers/
+$ tar xvf ~/Downloads/geckodriver-vX.XX.X-linux64.tar.gz -C /usr/bin/geckodriver
+`
+
+#### Export PATH variable
+`
+$ export PATH=$PATH:/usr/bin/geckodriver
 `
