@@ -2,6 +2,7 @@
 
 This repository contains exercices of book **Test-Driven Development with Python** and self exercices and tests.
 
+![alt text](https://i.imgur.com/hMbtsDY.png)
 
 ## Install Python dependencies
 
@@ -10,39 +11,22 @@ $ pip3 install -r requirements.txt
 `
 
 
-## Install selenium
+## Install selenium (Chrome on Ubuntu)
 
-### Docs
-https://selenium-python.readthedocs.io/installation.html
-
-https://trendoceans.com/how-to-install-and-setup-selenium-with-firefox-on-ubuntu/
-
-### Comands
+#### Download right drivers (check your browser version)
+[releases](https://chromedriver.storage.googleapis.com/index.html)
 
 #### Make drivers dir
 `
-$ sudo mkdir -p /usr/bin/geckodriver/
+$ sudo mkdir -p /usr/bin/chromedriver/
 `
 
-#### Download last drivers
-[releases](https://github.com/mozilla/geckodriver/releases/)
-
-**or using wget**
-
+#### Extract files
 `
-$ wget https://github.com/mozilla/geckodriver/releases/download/vX.XX.X/geckodriver-vX.XX.X-linux64.tar.gz
+$ unzip ~/Downloads/chromedriver_linux64.zip
 `
 
-#### Extract files to drivers folder
+### Move to drivers folder
 `
-$ tar xvf ~/Downloads/geckodriver-vX.XX.X-linux64.tar.gz -C /usr/bin/geckodriver
+$ sudo mv chromedriver /bin/chromedriver/chromedriver
 `
-
-#### Export PATH variable
-`
-$ export PATH=$PATH:/usr/bin/geckodriver
-`
-
-# Logbook
-
-![alt text](https://i.imgur.com/hMbtsDY.png)
