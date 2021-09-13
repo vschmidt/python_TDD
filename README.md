@@ -18,7 +18,12 @@ $ pip3 install -r requirements.txt
 
 #### Make drivers dir
 `
-$ sudo mkdir -p /usr/bin/chromedriver/
+$ sudo mkdir /usr/bin/chromedriver/
+`
+
+#### Give right privileges
+`
+$ sudo chmod 755 /bin/chromedriver/
 `
 
 #### Extract files
