@@ -18,5 +18,8 @@ from django.urls import path, re_path
 from lists import views as list_views
 
 urlpatterns = [
-    re_path(r'^$', list_views.home_page, name='home'),
+    re_path(r"^$", list_views.home_page, name="home"),
+    re_path(
+        r"^lists/the-only-list-in-the-world/$", list_views.view_list, name="view_list"
+    ),
 ]
